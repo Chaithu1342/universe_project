@@ -25,3 +25,7 @@ urlpatterns = [
     path('signup/', signup, name='signup'),
     path('dashboard/', dashboard, name='dashboard'),
 ]
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'users/home.html')
