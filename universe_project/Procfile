@@ -1,0 +1,1 @@
+web: gunicorn universe_project.wsgi:application
