@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-    <style>
-        body {
-            background: url('https://source.unsplash.com/1600x900/?galaxy,stars') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+{% extends 'users/base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
     <h1>Welcome to Your Dashboard</h1>
-</body>
-</html>
+    <p><a href="{% url 'home' %}">Back to Home</a></p>
+{% endblock %}

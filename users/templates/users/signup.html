@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Signup</title>
-    <style>
-        body {
-            background: url('https://source.unsplash.com/1600x900/?universe,space') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
+{% extends 'users/base.html' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
     <h2>Signup</h2>
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">Sign Up</button>
     </form>
-</body>
-</html>
+{% endblock %}
